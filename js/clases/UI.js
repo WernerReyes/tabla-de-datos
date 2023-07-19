@@ -56,7 +56,6 @@ class UI {
 
                      // Filas
                 const divFilas = document.createElement('DIV');
-                divFilas.setAttribute('id', 'filas');
                     const cardBody = document.createElement('DIV');
                     cardBody.classList.add('card-body','px-0','pb-2');
                         const tableResponsive = document.createElement('DIV');
@@ -87,7 +86,7 @@ class UI {
                                         <td>
                                           <div class="d-flex px-2 py-1">
                                             <div class="form-check form-switch">
-                                              <input class="form-check-input completado" type="checkbox" role="switch" id="completado" data-id="${idFila}" ${ completado ? 'checked' : ''}>
+                                              <input class="form-check-input completado" type="checkbox" role="switch" data-id="${idFila}" ${ completado ? 'checked' : ''}>
                                             </div>
                                             <div class="d-flex flex-column justify-content-center">
                                               <h6 class="mb-0 text-sm">${nombre}</h6>

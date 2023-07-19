@@ -92,7 +92,7 @@ import UI from "./clases/UI.js";
         // Enviamos un objeto
         tablas.insertandoTablas( 
             { 
-            nombre: nombreTabla.trim(), 
+            nombre: nombreTabla.trim().toLowerCase(), 
             idTabla: new Date().getTime(),
             completados: 0
             
@@ -164,7 +164,7 @@ import UI from "./clases/UI.js";
 
         tablas.insertandoFilas(
               {
-                nombre: nombreFila.value.trim(),
+                nombre: nombreFila.value.trim().toLowerCase(),
                 nombreTablaInsertar, 
                 idFila: new Date().getTime(),
                 fecha: new Date().toLocaleDateString('es-ES'),
