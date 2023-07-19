@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- LINKS DE CSS -->
+    <link rel="stylesheet" href="css/material-dashboard.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- LINKS ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form id="formulario-tablas">
+            <div class="mb-3 form-crear text-center">
+              <label for="name" class="form-label">Nombre de la tabla</label>
+              <input type="text" class="form-control nombre-tabla" id="nombreTabla" placeholder="Ingresa el nombre de la tabla"/>
+            </div>
+
+            <div class="d-flex align-items-center btns-cont">
+              <button class="btn btn-primary btn-lg text-white mb-0 me-3 agregar-filas disabled" type="button">
+                <i class="bi bi-box-arrow-in-down mx-2"></i>Agregar filas
+              </button>
+              <button class="btn btn-primary btn-lg text-white mb-0 me-0 crear-tabla" type="submit">
+                <i class="bi bi-table mx-2"></i>Insertar tabla
+              </button>
+            </div>
+            
+          
+             
+           </form>
+
+
+           <form id="formulario-filas" class="d-none">
+
+            <div class="mb-3 form-agregar text-center">
+              <label for="name" class="form-label">Nombre de la fila</label>
+              <input type="text" class="form-control nombre-fila-2" id="nombreFila" placeholder="Ingresa el nombre de la fila"/>
+              
+              <label for="name" class="form-label mt-4">Nombre de la tabla a agregar</label>
+              <input type="text" class="form-control nombre-tabla-buscar" id="nombreTablaBuscar" placeholder="Ingresa el nombre de la tabla a insertar"/>
+            
+            </div>
+            
+            <div class="d-flex align-items-center btns-cont">
+            <button class="btn btn-primary btn-lg text-white mb-0 me-0 agregar-filas mx-3" type="submit">
+              <i class="bi bi-box-arrow-in-down mx-2"></i>Insertar Fila
+            </button>
+            <button class="btn btn-primary btn-lg text-white mb-0 me-0 crear-tabla mx-3" type="button">
+              <i class="bi bi-table mx-2"></i>Crear tabla
+             </button>
+            </div>
+          
+             
+           </form>
+        </div>
+      </div>
+    </div>
+
+        <!-- CONTENIDO DINAMICO -->
+
+        <div id="contenedor-padre">
+    
+         <!-- CONTENIDO DINAMICO -->
+    
+  </div>
+  </body>
+
+
+  <!-- LINKS DE JS -->
+  <script type="module" src="js/index.js"></script>
+</html>

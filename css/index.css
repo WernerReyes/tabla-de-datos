@@ -1,0 +1,36 @@
+#formulario-tablas,
+#formulario-filas {
+    margin: 30px auto;
+    border: solid black;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent; /* Agregamos un borde transparente */
+    border-radius: 50px;
+  }
+  
+
+  #formulario-tablas .nombre-tabla,
+  #formulario-filas #nombreFila,
+  #formulario-filas #nombreTablaBuscar {
+    padding: 10px; /* Ajustar el espaciado interior del input */
+    border: 2px solid #e91e63; /* Borde sólido con color gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px #ba909e; /* Sombra suave en la parte inferior */
+    outline: none; /* Quitamos el contorno al enfocar el input */
+    transition: box-shadow 0.2s ease; /* Transición suave en la sombra al enfocar */
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #formulario-tablas .nombre-tabla:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al enfocar */
+  }
+
+  #formulario-tablas label,
+  #formulario-filas label {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 1000;
+    margin: 0;
+    color: #e91e63;
+  }
+  
